@@ -297,7 +297,7 @@ cd P3MO-Library-Project
     /DTOs
       BookDTO.cs
     /Data
-      LibraryDbContext.cs
+      P3MOContext.cs
       /Migrations
     Program.cs
     appsettings.json

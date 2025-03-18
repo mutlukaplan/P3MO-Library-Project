@@ -1,0 +1,11 @@
+import { z } from 'zod';
+
+export const authorSchema = z.object({
+  id: z.number().optional(),
+  firstName: z.string().min(1, { message: 'First name is required' }).max(100, { message: 'First name must be less than 100 characters' }),
+  lastName: z.string().min(1, { message: 'Last name is required' }).max(100, { message: 'Last name must be less than 100 characters' }),
+  biography: z.string().max(2000, { message: 'Biography must be less than 2000 characters' }).optional().or(z.literal('')),
+  birthDate: z.string().optional().or(z.literal('')),
+});
+
+export type AuthorFormValues = z.infer<typeof authorSchema>;

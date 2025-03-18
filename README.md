@@ -93,7 +93,7 @@ cd P3MO-Library-Project
 
 1. **Navigate to the frontend directory**:
    ```bash
-   cd frontend
+   cd p3mo-ui
    ```
 
 2. **Install Node.js dependencies**:

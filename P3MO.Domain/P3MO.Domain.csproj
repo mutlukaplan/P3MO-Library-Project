@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\P3MO.Repository\P3MO.Repository.csproj" />
+    <ProjectReference Include="..\P3MO.Shared.Models\P3MO.Shared.Models.csproj" />
+  </ItemGroup>
+
 </Project>

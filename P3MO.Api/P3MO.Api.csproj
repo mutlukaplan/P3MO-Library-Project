@@ -22,6 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\P3MO.Application\P3MO.Application.csproj" />
+    <ProjectReference Include="..\P3MO.Domain\P3MO.Domain.csproj" />
     <ProjectReference Include="..\P3MO.Repository\P3MO.Repository.csproj" />
   </ItemGroup>
 

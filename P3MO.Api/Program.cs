@@ -1,6 +1,9 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using P3MO.Application;
+using P3MO.Domain;
+using P3MO.Repository;
 using P3MO.Repository.Data;
 
 namespace P3MO.Api
@@ -46,7 +49,11 @@ namespace P3MO.Api
                     Description = "P3MO API for Library Management System"
                 });
             });
-                //http://localhost:5078/swagger/index.html
+            //http://localhost:5078/swagger/index.html
+
+            builder.Services.AddScoped<IBookService, BookService>();
+            builder.Services.AddScoped<IBookManager, BookManager>();
+            builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 
             var app = builder.Build();

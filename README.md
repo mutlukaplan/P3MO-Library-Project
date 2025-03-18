@@ -47,7 +47,7 @@ cd P3MO-Library-Project
 
 1. **Navigate to the backend directory**:
    ```bash
-   cd backend/LibraryManagement.API
+   cd backend/P3MO.Api
    ```
 
 2. **Restore .NET dependencies**:
@@ -59,7 +59,7 @@ cd P3MO-Library-Project
    Open `appsettings.json` and update the `ConnectionStrings:DefaultConnection` with your SQL Server connection string:
    ```json
    "ConnectionStrings": {
-     "DefaultConnection": "Server=YOUR_SERVER;Database=LibraryManagement;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=true"
+     "DefaultConnection": "Data Source=p3mo-dev-mutlu.database.windows.net;Initial Catalog=db-mutlu;Persist Security Info=True;User ID=sqladmin;Password=***********;Trust Server Certificate=True"
    }
    ```
 
@@ -285,7 +285,7 @@ cd P3MO-Library-Project
 
 ```
 /backend
-  /LibraryManagement.API
+  /P3MO.Api
     /Controllers
       BooksController.cs
       AuthorsController.cs

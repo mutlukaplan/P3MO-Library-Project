@@ -47,7 +47,7 @@ cd P3MO-Library-Project
 
 1. **Navigate to the backend directory**:
    ```bash
-   cd backend/P3MO.Api
+   cd P3MO.Api
    ```
 
 2. **Restore .NET dependencies**:
@@ -284,7 +284,6 @@ cd P3MO-Library-Project
 ### Backend Structure
 
 ```
-/backend
   /P3MO.Api
     /Controllers
       BooksController.cs
@@ -307,7 +306,7 @@ cd P3MO-Library-Project
 ### Frontend Structure
 
 ```
-/frontend
+/p3mo-ui
   /app
     /api                 # BFF API handlers
       /books

@@ -7,10 +7,6 @@ namespace P3MO.Repository.Data
     {
         public P3MOContext(DbContextOptions<P3MOContext> options) : base(options) { }
 
-        //public DbSet<Album> Albums { get; set; }
-
-        //public DbSet<Artist> Artists { get; set; } = default!;
-
         public DbSet<Book> Books { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Genre> Genres { get; set; }    

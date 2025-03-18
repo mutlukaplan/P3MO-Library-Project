@@ -70,8 +70,8 @@ cd P3MO-Library-Project
 
 5. **Create the database and apply migrations**:
    ```bash
-   dotnet ef migrations add InitialCreate
-   dotnet ef database update
+   dotnet ef migrations add InitialCreate --project ./../P3MO.Repository/P3MO.Repository.csproj --startup-project ./../P3MO.Api/P3MO.Api.csproj
+   dotnet ef database update --project ./../P3MO.Repository/P3MO.Repository.csproj --startup-project ./../P3MO.Api/P3MO.Api.csproj
    ```
 
 6. **Install Playwright browsers** (required for PDF generation):
@@ -429,7 +429,7 @@ Once both the frontend and backend are running, you can use the application to:
 1. Create the entity model in the backend (Project uses different location than it's initial startup project for context file)
 2. Add it to the DbContext
 3. Create DTOs for the entity
-4. Create a migration: `dotnet ef migrations add AddNewEntity --project ./../P3MO.Repository/P3MO.Repository.csproj --startup-project ./../P3MO.Api/P3MO.Api.csproj`
+4. Create a migration: `dotnet ef migrations add InitialCreate --project ./../P3MO.Repository/P3MO.Repository.csproj --startup-project ./../P3MO.Api/P3MO.Api.csproj`
 5. Update the database: `dotnet ef database update --project ./../P3MO.Repository/P3MO.Repository.csproj --startup-project ./../P3MO.Api/P3MO.Api.csproj`
 6. Create controllers for API endpoints
 7. Create frontend API clients and components

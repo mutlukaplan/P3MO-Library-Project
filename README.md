@@ -454,6 +454,14 @@ Once both the frontend and backend are running, you can use the application to:
 - Deploy to Vercel, Netlify, or any other Next.js-compatible hosting
 - Set environment variables for the production API URL
 
+## Screenshots
+
+![dashboard](/SS/dashboard.PNG)
+![edit_screen](/SS/edit_screen.PNG)
+![modal](/SS/modal.PNG)
+![view_screen](/SS/view_screen.PNG)
+![pdf_output](/SS/pdf_output.PNG)
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.

@@ -456,11 +456,11 @@ Once both the frontend and backend are running, you can use the application to:
 
 ## Screenshots
 
-![dashboard](/SS/dashboard.PNG)
-![edit_screen](/SS/edit_screen.PNG)
-![modal](/SS/modal.PNG)
-![view_screen](/SS/view_screen.PNG)
-![pdf_output](/SS/pdf_output.PNG)
+![dashboard](/SS/dashboard.png)
+![edit_screen](/SS/edit_screen.png)
+![modal](/SS/modal.png)
+![view_screen](/SS/view_screen.png)
+![pdf_output](/SS/pdf_output.png)
 
 ## License
 
